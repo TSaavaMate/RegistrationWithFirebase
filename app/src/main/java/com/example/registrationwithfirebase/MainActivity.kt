@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.hide()
         buttonRegister.setOnClickListener {
             val email=EmailEditext.text.toString()
             val password=PasswordEditext.text.toString()
